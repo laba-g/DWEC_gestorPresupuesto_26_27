@@ -12,16 +12,15 @@ function actualizarPresupuesto(value) {
         return presupuesto;
     }
     else {
-        alert('El valor no es válido');
+        console.log('El valor no es válido');
         return -1;
     }
-    return -1
 
 }
 
 function mostrarPresupuesto() {
     // TODO
-    alert("Tu presupuesto actual es de " + presupuesto+ " €");
+    return "Tu presupuesto actual es de " + presupuesto + " €";
 }
 
 function CrearGasto() {
