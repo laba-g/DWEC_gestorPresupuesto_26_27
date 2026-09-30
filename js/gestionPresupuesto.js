@@ -26,10 +26,8 @@ function mostrarPresupuesto() {
 function CrearGasto() {
     // TODO
     
-    let gastos= new Object;
-    if () {
-        
-    }
+    let gasto= new Object;
+    
 }
 
 // NO MODIFICAR A PARTIR DE AQUÍ: exportación de funciones y objetos creados para poder ejecutar los tests.
