@@ -15,15 +15,18 @@ function actualizarPresupuesto(value) {
         alert('El valor no es válido');
         return -1;
     }
+    return -1
 
 }
 
 function mostrarPresupuesto() {
     // TODO
+    alert("Tu presupuesto actual es de " + presupuesto+ " €");
 }
 
 function CrearGasto() {
     // TODO
+    
 }
 
 // NO MODIFICAR A PARTIR DE AQUÍ: exportación de funciones y objetos creados para poder ejecutar los tests.
