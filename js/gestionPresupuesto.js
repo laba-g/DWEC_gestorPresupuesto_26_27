@@ -7,7 +7,7 @@ let presupuesto = 0;
 
 function actualizarPresupuesto(value) {
 
-    if (typeof value === "number" && value > 0) {
+    if (typeof value === "number" && value >= 0) {
         presupuesto = value;
         return presupuesto;
     }
@@ -23,25 +23,25 @@ function mostrarPresupuesto() {
     return "Tu presupuesto actual es de " + presupuesto + " €";
 }
 
-function CrearGasto(value, desc ) {
+function CrearGasto(descripcion,valor ) {
     // TODO
-    
-    if (typeof value === "number" && value > 0) {
-        this.value = value;
+    this.descripcion=descripcion;
+    if (typeof valor === "number" && valor >= 0) {
+        this.valor = valor;
     
     }else{
-        value=0;
+        this.valor=0;
     }
 
     this.mostrarGasto= function(){
         return "Gasto correspondiente a "+ this.descripcion +" con valor "+this.valor+ " €";
     }
     this.actualizarDescripcion= function(nvDesc){
-        this.desc=nvDesc;
+        this.descripcion=nvDesc;
     }
-    this.actualizarValor = function(nvValue){
-        if (typeof nvValue === "number" && nvValue > 0) {
-        this.value = nvValue;
+    this.actualizarValor = function(valor){
+        if (typeof valor === "number" && valor >= 0) {
+        this.valor = valor;
         }
     }
     
