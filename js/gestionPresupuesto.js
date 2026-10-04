@@ -23,10 +23,27 @@ function mostrarPresupuesto() {
     return "Tu presupuesto actual es de " + presupuesto + " €";
 }
 
-function CrearGasto() {
+function CrearGasto(value, desc ) {
     // TODO
     
-    let gasto= new Object;
+    if (typeof value === "number" && value > 0) {
+        this.value = value;
+    
+    }else{
+        value=0;
+    }
+
+    this.mostrarGasto= function(){
+        return "Gasto correspondiente a "+ this.descripcion +" con valor "+this.valor+ " €";
+    }
+    this.actualizarDescripcion= function(nvDesc){
+        this.desc=nvDesc;
+    }
+    this.actualizarValor = function(nvValue){
+        if (typeof nvValue === "number" && nvValue > 0) {
+        this.value = nvValue;
+        }
+    }
     
 }
 
