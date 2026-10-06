@@ -92,6 +92,10 @@ function borrarGasto(id) {
 
 
 function calcularTotalGastos() {
+    let calc= 0;
+    for(let i=0; i<gastos.length ;i++){
+        calc+= gastos[i];
+    }
 }
 
 function calcularBalance() {
